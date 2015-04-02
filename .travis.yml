@@ -3,4 +3,4 @@ node_js:
   - "0.12"
   - "iojs"
 sudo: false
-script: "npm run-script test-ci"
+script: "npm run test"

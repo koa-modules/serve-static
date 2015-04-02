@@ -30,7 +30,8 @@ app.use(serveStatic(root, options));
 
 ## API
 
-* **serveStatic**  
+* **serveStatic**
+
 > Just **serve-static** wrapper, returns a GeneratorFunction.
 
 [npm-img]: https://img.shields.io/npm/v/koa-serve-static.svg?style=flat-square

@@ -28,13 +28,11 @@ function serveStatic(root, options) {
     return new Promise((resolve, reject) => {
       // hacked statusCode
       if (ctx.status === 404) ctx.status = 200
+      // unnecessary response by koa
       ctx.respond = false
-      // stream pipe
-      fn(ctx.req, ctx.res, (err) => {
-        // 404, serve-static forward non-404 errors
-        // force throw error
-        reject(err)
-      })
+      // 404, serve-static forward non-404 errors
+      // force throw error
+      fn(ctx.req, ctx.res, reject)
     })
   }
 }

@@ -14,20 +14,18 @@
   "author": "Fangdun Cai <cfddream@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "serve-static": "^1.9.2",
-    "thenify": "^3.1.0"
+    "serve-static": "^1.x"
   },
   "devDependencies": {
-    "koa": "^0.18.1",
-    "mocha": "^2.2.1",
-    "supertest": "^0.15.0"
+    "koa": "^2.0.0-alpha.3",
+    "mocha": "^2.x",
+    "supertest": "^1.x"
   },
   "files": [
     "LICENSE",
     "index.js"
   ],
   "engines": {
-    "node": ">= 0.12.0",
-    "iojs": "1.x.x"
+    "node": ">= 4"
   }
 }

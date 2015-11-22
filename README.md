@@ -17,7 +17,17 @@ $ npm install --save koa-serve-static
 
 ## Usage
 
-Adding this into your koa server file:
+### **=1.x** 100%, working with `koa-v2`
+
+```js
+const koa = require('koa');
+const serveStatic = require('koa-serve-static');
+const app = new Koa();
+
+app.use(serveStatic(root, options));
+```
+
+### **<1.x**
 
 ```js
 var koa = require('koa');
@@ -25,14 +35,7 @@ var serveStatic = require('koa-serve-static');
 var app = koa();
 
 app.use(serveStatic(root, options));
-
 ```
-
-## API
-
-* **serveStatic**
-
-> Just **serve-static** wrapper, returns a GeneratorFunction.
 
 [npm-img]: https://img.shields.io/npm/v/koa-serve-static.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/koa-serve-static

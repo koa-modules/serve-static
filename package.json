@@ -1,31 +1,34 @@
 {
   "name": "koa-serve-static",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.1",
   "description": "Serve static files for koa",
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec --bail --check-leaks test/"
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "isparta cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/*.js",
+    "test-cov": "isparta cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/*.js"
   },
   "repository": "koa-modules/serve-static",
   "keywords": [
     "serve",
     "static"
   ],
-  "author": "Fangdun Cai <cfddream@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "serve-static": "^1.x"
   },
   "devDependencies": {
     "koa": "^2.0.0-alpha.3",
+    "isparta": "^4.x",
     "mocha": "^2.x",
     "supertest": "^1.x"
+  },
+  "engines": {
+    "node": ">= 4"
   },
   "files": [
     "LICENSE",
     "index.js"
-  ],
-  "engines": {
-    "node": ">= 4"
-  }
+  ]
 }

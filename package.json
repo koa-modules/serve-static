@@ -1,6 +1,6 @@
 {
   "name": "koa-serve-static",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Serve static files for koa",
   "author": "Fangdun Cai <cfddream@gmail.com>",
   "license": "MIT",
@@ -28,7 +28,9 @@
     "node": ">= 4"
   },
   "files": [
+    "History.md",
     "LICENSE",
+    "README.md",
     "index.js"
   ]
 }

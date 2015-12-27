@@ -16,7 +16,7 @@
     "static"
   ],
   "dependencies": {
-    "serve-static": "^1.x"
+    "serve-static": "^1.10.0"
   },
   "devDependencies": {
     "koa": "^2.0.0-alpha.3",
